@@ -11,6 +11,7 @@
 #' tabmmult('row','column','data','valuelabel')
 #'
 tabmult<- function(row, column,data,valuelabel=NULL) {
+  suppressMessages(library(dplyr))
     dof<- data %>%
       filter(!is.na({row})) %>%
       filter(!is.na({column}))%>%

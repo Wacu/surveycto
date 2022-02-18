@@ -3,5 +3,6 @@
 export(ctoimport)
 export(koboimport)
 export(odkmean)
+export(rodkmult)
 export(tabmult)
 export(toproper)

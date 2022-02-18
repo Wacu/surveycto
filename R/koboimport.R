@@ -13,7 +13,7 @@
 #' data<-koboimport(servername,form_id,username,password)
 #'
   koboimport<- function (servername,formid, username,password) {
-    library(dplyr)
+    suppressMessages(library(dplyr))
     request<-c() ; data_cto<-c() ## Removing the chances of previous data
     urls<-paste("https://kf.",servername,"/assets/",formid,"/submissions/?format=json",sep='')
     print(urls)
