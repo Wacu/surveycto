@@ -16,9 +16,9 @@
     request<-c() ; data_cto<-c() ## Removing the chances of previous data
     urls<-paste("https://kf.",servername,"/assets/",formid,"/submissions/?format=json",sep='')
     print(urls)
-    rawdata<-GET(urls,authenticate(username,password))
+    rawdata<-httr::GET(urls,jsonlite::authenticate(username,password))
     d_content <- rawToChar(rawdata$content)
-    d_content <- fromJSON(d_content)
+    d_content <- jsonlite::fromJSON(d_content)
     data_cto <-suppressWarnings(suppressMessages(as.data.frame(d_content)))
     print(paste(nrow(data_cto),"of",formid, "have been downloaded.",sep=' '))
     df_new <- data_cto %>% dplyr:: select(-contains("]/")) # Dropping repeat group data.
