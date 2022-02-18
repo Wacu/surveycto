@@ -1,0 +1,27 @@
+Package: surveycto
+Type: Package
+Title: Manipulation of Data Collected through ODK compliant Platforms
+Version: 0.1.0
+Author: Waiguru Muiruki 
+Maintainer: The package maintainer <waigurusamuel@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    expss,
+    httr,
+    jsonlite,
+    readr,
+    readxl,
+    stringr,
+    tidyr
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
+URL: https://github.com/Waiguru254/surveycto
+BugReports: https://github.com/Waiguru254/surveycto/issues
