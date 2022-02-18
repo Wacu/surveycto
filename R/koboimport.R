@@ -13,10 +13,11 @@
 #' data<-koboimport(servername,form_id,username,password)
 #'
   koboimport<- function (servername,formid, username,password) {
+    library(dplyr)
     request<-c() ; data_cto<-c() ## Removing the chances of previous data
     urls<-paste("https://kf.",servername,"/assets/",formid,"/submissions/?format=json",sep='')
     print(urls)
-    rawdata<-httr::GET(urls,jsonlite::authenticate(username,password))
+    rawdata<-httr::GET(urls,httr::authenticate(username,password))
     d_content <- rawToChar(rawdata$content)
     d_content <- jsonlite::fromJSON(d_content)
     data_cto <-suppressWarnings(suppressMessages(as.data.frame(d_content)))

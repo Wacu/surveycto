@@ -19,7 +19,7 @@
       request<-c() ; data_cto<-c() ## Removing the chances of previous data
 
       request <- httr::GET(paste("https://",servername, ".surveycto.com/api/v1/forms/data/csv/",formid,sep=''),
-                           jsonlite::authenticate(username,password))
+                           httr::authenticate(username,password))
 
       data_cto <- read.csv (text = httr::content(request, "text"))
 
