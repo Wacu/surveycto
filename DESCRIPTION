@@ -23,7 +23,8 @@ Imports:
     readxl,
     stringr,
     tidyr,
-    tools
+    tools,
+    xlsx
 Suggests: 
     rmarkdown,
     knitr
