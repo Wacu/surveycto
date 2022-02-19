@@ -8,6 +8,8 @@
 #' @export
 #'
 #' @examples
+#' Not run
+#' rodkvar(xlsforn,'dataName')
 rodkvar<- function(xlsform,dataName) {
   suppressMessages(library(dplyr))
   ###Extracting the XLSFORM path

@@ -15,3 +15,8 @@ rodkvartype(xlsform)
 \description{
 Compiling Variable type into a data.frame from XLSFORM
 }
+\examples{
+#Not run
+rodkvartype(xlsform)
+
+}

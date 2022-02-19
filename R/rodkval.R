@@ -8,6 +8,8 @@
 #' @export
 #'
 #' @examples
+#' NOT run
+#' rodkmult(xlsforn,'dataName')
 rodkval<- function(xlsform,dataName) {
   suppressMessages(library(dplyr))
   ################################## choices  ###################################

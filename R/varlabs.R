@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' NOT RUN
+#' varlabs(xlsform)
 varlabs<- function(xlsform) {
   suppressMessages(library(dplyr))
   ################################## choices  ###################################

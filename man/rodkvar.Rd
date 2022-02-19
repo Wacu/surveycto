@@ -2,7 +2,7 @@
 % Please edit documentation in R/rodkvar.R
 \name{rodkvar}
 \alias{rodkvar}
-\title{Title}
+\title{Generates Rscript to add variable labels}
 \usage{
 rodkvar(xlsform, dataName)
 }
@@ -16,5 +16,9 @@ stated}
 
 }
 \description{
-Title
+Generates Rscript to add variable labels
+}
+\examples{
+Not run
+rodkvar(xlsforn,'dataName')
 }

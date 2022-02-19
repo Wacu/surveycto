@@ -9,6 +9,8 @@
 #' @export
 #'
 #' @examples
+#' NOT run
+#' rodkmult(xlsforn,'dataName')
 rodkmult<- function(xlsform,dataName) {
   suppressMessages(library(dplyr))
   ###Extracting the XLSFORM path

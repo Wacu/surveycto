@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' NOT run
+#' rodksinglelab(xlsform)
 rodksinglelab<- function(xlsform) {
   suppressMessages(library(dplyr))
   multiple<-as.data.frame(xlsx::read.xlsx2(xlsform,sheetName='survey'))%>%

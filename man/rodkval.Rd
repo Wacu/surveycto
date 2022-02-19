@@ -2,7 +2,7 @@
 % Please edit documentation in R/rodkval.R
 \name{rodkval}
 \alias{rodkval}
-\title{Title}
+\title{Generates a Script to add single variable value labels.}
 \usage{
 rodkval(xlsform, dataName)
 }
@@ -16,5 +16,9 @@ stated above.}
 
 }
 \description{
-Title
+Generates a Script to add single variable value labels.
+}
+\examples{
+NOT run
+rodkmult(xlsforn,'dataName')
 }

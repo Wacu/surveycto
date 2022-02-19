@@ -19,3 +19,7 @@ survey.}
 \description{
 Compiling Multiple Variable Choices.
 }
+\examples{
+NOT run
+rodkmult(xlsforn,'dataName')
+}

@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' NOT run
+#' rodkmultlab(xlsforn,'dataName')
 rodkmultlab<- function(xlsform) {
   multiple<-as.data.frame(xlsx::read.xlsx2(xlsform,sheetName='survey'))%>%
     dplyr::select(type,name)%>%

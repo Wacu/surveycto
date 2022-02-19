@@ -6,6 +6,9 @@
 #' @export
 #'
 #' @examples
+#' #Not run
+#' rodkvartype(xlsform)
+#'
 rodkvartype<- function(xlsform) {
   suppressMessages(library(dplyr))
   ###Extracting the XLSFORM path
