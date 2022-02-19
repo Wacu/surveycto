@@ -1,15 +1,17 @@
 Package: surveycto
 Type: Package
-Title: Manipulation of Data Collected through ODK-compliant Platforms
+Title: Manipulation of Data Collected through XLSFORM-compliant Platforms
 Version: 0.1.0
 Author@R: c(person("Waiguru Muiruki", email="waigurusamuel@gmail.com"
 Maintainer: The package maintainer <waigurusamuel@gmail.com>
-Description: The package is used to manuplicate data collected through platform
-             that use Open Data Kit(ODK) platforms such as SurveyCTO, kobo
-             (either 'https://kobo.humanitarianresponse.info/' or
-             'kc.kobotoolbox.org'), ODK central. The main purpose is to develop 
-             live dashboard during data collection. There are functions to add
-             value labels for both multiple and single variables from XLSFORM.
+Description: SurveyCTO package is a metapackages that is comprised of 
+             specilized function to organize, manipulate and analyze
+             data collected through platform that use XLSFORM compliant
+             platforms such as SurveyCTO,ODK, ONA,Kobotoolbox.However, 
+             some function(s) may be used with any structured.  The main
+             is to develop live dashboard during data collection.
+             There are functions to add value labels for both multiple 
+             and single variables from XLSFORM.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
